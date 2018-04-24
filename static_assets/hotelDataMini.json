@@ -1,0 +1,78 @@
+{
+	"nav_icon": "location.png",
+	"info_icon": "info_icon.png",
+	"menu_icon": "menu_icon.png",
+	"onEnterSound": "onEnterSound.ogg",
+	"bgMusic": "Classical-guitar-music.mp3",
+	"backgroundMusic": {
+		"1": "Classical-guitar-music.mp3",
+		"2": "Mystic-dream-piano-melody.mp3",
+		"3": "Singing-bowls-and-birds-chirping-sleep-music.mp3",
+		"4": "Melancholic-piano-music.mp3",
+		"5": "Calm-music-for-kids.mp3"
+	},
+	"firstPhotoId": "1",
+	"firstPhotoRotation": 360,
+	"photos": [{
+			"rotationOffset": 0,
+			"urismall": "1.small.PNG",
+			"uribig": "1.Big.jpg",
+			"tooltips": [{
+				"text": "2. AlMirqab Lobby",
+				"rotationY": 60,
+				"linkedPhotoId": "2"
+			}]
+		},
+		{
+			"rotationOffset": 0,
+			"urismall": "2.small.PNG",
+			"uribig": "2.Big.jpg",
+			"tooltips": [{
+				"text": "3. Al Jasra Argaan Moroccan Restaurant",
+				"rotationY": 60,
+				"linkedPhotoId": "3"
+			}]
+		},
+		{
+			"rotationOffset": 0,
+			"urismall": "3.small.PNG",
+			"uribig": "3.Big.jpg",
+			"tooltips": [{
+				"text": "4. Al Jasra Pearl Suite Lounge 1",
+				"rotationY": 60,
+				"linkedPhotoId": "4"
+			}]
+		},
+		{
+			"rotationOffset": 0,
+			"urismall": "4.small.PNG",
+			"uribig": "4.Big.jpg",
+			"tooltips": [{
+				"text": "5. Al Jasra Pearl Suite Lounge 2",
+				"rotationY": 60,
+				"linkedPhotoId": "5"
+			}]
+		},
+		{
+			"rotationOffset": 0,
+			"urismall": "5.small.PNG",
+			"uribig": "5.Big.jpg",
+			"tooltips": [{
+				"text": "6. Al Jasra Pearl Room",
+				"rotationY": 60,
+				"linkedPhotoId": "6"
+			}]
+		},
+		{
+			"rotationOffset": 0,
+			"urismall": "6.small.PNG",
+			"uribig": "6.Big.jpg",
+			"tooltips": [{
+				"text": "7. Blue Heron Beach Resort",
+				"rotationY": 60,
+				"linkedPhotoId": "7"
+			}]
+		}
+
+	]
+}
