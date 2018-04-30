@@ -17,62 +17,43 @@
 			"rotationOffset": 0,
 			"urismall": "1.small.PNG",
 			"uribig": "1.Big.jpg",
-			"tooltips": [{
-				"text": "2. AlMirqab Lobby",
-				"rotationY": 60,
-				"linkedPhotoId": "2"
-			}]
+			"headingtext": "1. AlMirqab Exterior",
+			"dscrpttext": "Nunc rhoncus, nibh blandit imperdiet vulputate, orci eros posuere ante, eu ullamcorper libero sem vitae tortor. Aenean at posuere metus, scelerisque ultricies sem. Maecenas nec lacus facilisis, elementum nisi in, volutpat eros. Mauris feugiat, felis nec vulputate placerat, dui nunc sagittis purus, nec cursus odio mi ut velit"
 		},
 		{
 			"rotationOffset": 0,
 			"urismall": "2.small.PNG",
 			"uribig": "2.Big.jpg",
-			"tooltips": [{
-				"text": "3. Al Jasra Argaan Moroccan Restaurant",
-				"rotationY": 60,
-				"linkedPhotoId": "3"
-			}]
+			"headingtext": "2. AlMirqab Lobby",
+			"dscrpttext": "Nulla semper est vel porttitor fermentum. Proin vehicula ipsum libero, ut rhoncus mi auctor sed. Sed nec fringilla justo, id fringilla lectus. Aenean semper suscipit augue sit amet ornare. Cras hendrerit augue quis tellus finibus sagittis. Ut posuere vulputate tortor, ac elementum lacus placerat sit amet"
 		},
 		{
 			"rotationOffset": 0,
 			"urismall": "3.small.PNG",
 			"uribig": "3.Big.jpg",
-			"tooltips": [{
-				"text": "4. Al Jasra Pearl Suite Lounge 1",
-				"rotationY": 60,
-				"linkedPhotoId": "4"
-			}]
+			"headingtext": "3. Al Jasra Argaan Moroccan Restaurant",
+			"dscrpttext": "Etiam at bibendum neque, sit amet rhoncus sem. Sed ullamcorper sollicitudin neque. Nunc placerat justo eget nibh ornare imperdiet.  Duis id urna augue. Nulla semper enim quis eros malesuada, in ultrices sapien maximus. Etiam dignissim elit finibus orci gravida, in commodo orci fringilla."
 		},
 		{
 			"rotationOffset": 0,
 			"urismall": "4.small.PNG",
 			"uribig": "4.Big.jpg",
-			"tooltips": [{
-				"text": "5. Al Jasra Pearl Suite Lounge 2",
-				"rotationY": 60,
-				"linkedPhotoId": "5"
-			}]
+			"headingtext": "4. Al Jasra Pearl Suite Lounge 1",
+			"dscrpttext": "Sed ullamcorper pellentesque dui, id fringilla ante aliquam a. Aenean vitae scelerisque leo. Cras consectetur nisl libero, nec fringilla justo consectetur sed. Etiam ultrices fermentum velit, at aliquam mi eleifend vel. Quisque viverra, nisl placerat lacinia aliquam, mi ex pretium nulla."
 		},
 		{
 			"rotationOffset": 0,
 			"urismall": "5.small.PNG",
 			"uribig": "5.Big.jpg",
-			"tooltips": [{
-				"text": "6. Al Jasra Pearl Room",
-				"rotationY": 60,
-				"linkedPhotoId": "6"
-			}]
+			"headingtext": "5. Al Jasra Pearl Suite Lounge 2",
+			"dscrpttext": "Duis eget convallis elit. Vivamus consectetur volutpat purus, id bibendum neque convallis vel. Aenean sit amet viverra nunc, et bibendum turpis. Sed ullamcorper eget felis at vehicula. Morbi sagittis id velit vel mollis. Donec eleifend nunc ut quam dignissim, nec suscipit erat congue."
 		},
 		{
 			"rotationOffset": 0,
 			"urismall": "6.small.PNG",
 			"uribig": "6.Big.jpg",
-			"tooltips": [{
-				"text": "7. Blue Heron Beach Resort",
-				"rotationY": 60,
-				"linkedPhotoId": "7"
-			}]
+			"headingtext": "6. Al Jasra Pearl Room",
+			"dscrpttext": "Pellentesque nunc ipsum, suscipit nec molestie non, placerat non dolor. Proin porta dolor id orci venenatis accumsan. Maecenas nec blandit lacus, sit amet imperdiet lorem. Suspendisse volutpat ut est et tincidunt. Sed convallis mauris suscipit, placerat arcu tempus, vehicula ligula. "
 		}
-
 	]
 }

@@ -6,13 +6,15 @@ import {
   Pano,
   asset,
   Image,
-  StyleSheet
+  StyleSheet,
+  Text
 } from 'react-vr';
 
 
 
 import Button from './components/Button';
 import Loader from './components/Loader';
+import Popup from './components/Popup';
 
 const VrSoundEffects = require('VrSoundEffects');
 const Easing = require('Easing');
@@ -26,24 +28,39 @@ export default class GalleryExample extends React.Component {
       loaderUrl:'loading.gif',
       EnterSound:'onEnterSound.ogg',
       jsonFile:'hotelDataMini.json',
-      rotateZ:new Animated.Value(0)
+      opacity:new Animated.Value(0),
+     
+      loopingIndex:0,
+      onHoverindex:-1,
     };
     this.style=StyleSheet.create({
          sideBar: {
               
               flexWrap: 'wrap',              
               transform: [
-                  {rotateX: -8},
-                  {translate: [-2, 0, -3]},
+                  
+                  {translate: [-1.25, -0.75, -3]},
                ],
              width: 5,
+             position:'relative'
            },
         desktopSideBar:{
             flexDirection: 'row',
         },
         mobileSideBar:{
             flexDirection: 'column',
+        },
+        outerwrapper:{
+            flexDirection:'column',
+            alignItems: 'center',
+            height:2,
+            transform:[
+                {
+                    translate:[0,-.5,0]
+                }
+            ]
         }
+        
       });
   }
 componentDidMount(){
@@ -54,18 +71,13 @@ componentDidMount(){
     
 }
 
-initializeRotate(){
-    Animated.timing(
-        this.state.rotateZ,{
-        toValue:100,
-        duration:100,
-        easing:Easing.in
-        }).start();
-}
+
   render() {
       const imgData=this.state.config?this.state.config:[];
       const imgObj=imgData.length>0?imgData[this.state.activeindex].uribig:'';
       let isLoading=this.state.activeindex!=this.state.previousIndex?true:false;
+      let hovertext=imgData.length>0?imgData[this.state.loopingIndex].headingtext:'';
+      let descriptiontext=imgData.length>0?imgData[this.state.loopingIndex].dscrpttext:'';
       const buttons = imgData.map((button,index) =>
           <Button
             key={index}
@@ -76,10 +88,17 @@ initializeRotate(){
             src={button.urismall}
             activeindex={this.state.activeindex}
             loopingindex={index}
+            onHoverindex={this.state.onHoverindex}
+            buttonData={button}
+            onEnter={()=>{
+                     this.setState({loopingIndex:index,onHoverindex:index});
+                    }}
+           onExit={()=>{
+                     this.setState({onHoverindex:-1});
+                    }}
           />
       );
-   const isSmallDevice=window.innerWidth<770?true:false;
- console.log(isSmallDevice);
+
     return (
       <View>
         {isLoading&&
@@ -92,11 +111,16 @@ initializeRotate(){
                                                   previousIndex:this.state.activeindex
                                                  });
                                             } }/>
-    
+      
+        <View style={this.style.outerwrapper}>
+           
         <View
-        style={[this.style.sideBar,isSmallDevice && this.style.mobileSideBar,!isSmallDevice && this.style.desktopSideBar]}
+        style={[this.style.sideBar,this.style.desktopSideBar]}
       >
+       
         {buttons}
+        
+      </View>
       </View>
     </View>
     );

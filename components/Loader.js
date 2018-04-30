@@ -56,8 +56,8 @@ class Loader extends React.Component {
       
         <Image source={asset(this.props.imgurl)} 
                style={{
-                        width:0.5,
-                        height:0.5
+                        width:0.2,
+                        height:0.2
                          }}
             />
       </View>
